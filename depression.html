@@ -44,10 +44,14 @@
   
   <style>
   
-  #depression-article {
+/* Remove background & unnecessary box styling */
+#depression-article {
   max-width: 900px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 0; /* removes inner padding */
+  background: none; /* removes white background */
+  box-shadow: none; /* removes shadow if any */
+  border-radius: 0; /* removes rounded corners */
   font-family: "Georgia", serif;
   line-height: 1.9;
   color: #222;
@@ -67,6 +71,7 @@
 #depression-article p {
   margin-bottom: 22px;
   font-size: 1.2em;
+  padding: 0; /* ensures no extra padding */
 }
 
 /* Lists */
@@ -85,8 +90,7 @@
 #depression-article li strong {
   color: #1f3c5a;
   font-weight: 600;
-}
-</style>
+}</style>
 
 <div style="text-align: left;">
   <a href="articles.html" class="back-button">← Back to Articles</a>
